@@ -1,0 +1,39 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">File Manager</h5>
+        </div>
+        <table class="table striped">
+          <thead>
+            <tr>
+              <th>File</th>
+              <th>Created</th>
+              <th>Updated</th>
+              <th>Owner</th>
+            </tr>
+          </thead>
+          <tbody *ngIf="pics?.results">
+            <tr *ngFor="let f of pics.results">
+              <td>
+                <a
+                  [routerLink]="['/pic/detail', f.id]"
+                  class="text-decoration-none"
+                >
+                  {{ f.filename }}
+                </a>
+              </td>
+              <td>{{ f.created | date : "short" }}</td>
+              <td>{{ f.updated | date : "short" }}</td>
+              <td>{{ f.user?.username }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <div>
+          <a [routerLink]="['/pic/new']" class="btn btn-primary">New File</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
