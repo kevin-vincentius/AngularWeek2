@@ -1,0 +1,60 @@
+Apa tujuan dari Angular Router?
+A) Menangani permintaan HTTP
+B) Mengelola navigasi antar halaman dalam aplikasi single-page
+C) Mengatur gaya global untuk aplikasi
+D) Menangani penyimpanan data di local storage
+ANSWER: B
+Apa yang dilakukan oleh `router-outlet` dalam Angular?
+A) Mengatur validasi form
+B) Menyisipkan konten dinamis berdasarkan rute yang aktif
+C) Menyimpan data di session storage
+D) Mengontrol performa aplikasi
+ANSWER: B
+3. Bagaimana cara menangani rute anak (child routes) dalam Angular?
+A) Menambahkan properti `children` dalam konfigurasi rute
+B) Menambahkan `RouterModule.forChild()`
+C) Menggunakan `RouterLink`
+D) Menambahkan metode `childRoutes()` dalam rute
+ANSWER: A
+Apa fungsi dari `RouterModule.forRoot()` dalam Angular?
+A) Mengatur routing utama aplikasi
+B) Mengatur routing untuk child module
+C) Menambahkan komponen ke dalam template
+D) Mengelola state aplikasi
+ANSWER: A
+Bagaimana cara melakukan navigasi programatis dalam Angular?
+A) this.router.navigate()
+B) this.route.moveTo()
+C) this.router.goToRoute()
+D) this.route.changeRoute()
+ANSWER: A
+Apa yang dilakukan oleh `canActivate` dalam konfigurasi rute Angular?
+A) Memuat komponen berdasarkan URL
+B) Memblokir atau mengizinkan akses ke rute sebelum diaktifkan
+C) Mengatur transisi halaman
+D) Menambahkan query parameter ke URL
+ANSWER: B
+Apa yang terjadi jika rute yang tidak ada dalam daftar rute dipanggil?
+A) Aplikasi akan menampilkan halaman error
+B) Rute default yang didefinisikan akan ditampilkan
+C) Tidak ada yang terjadi
+D) Aplikasi akan berhenti berfungsi
+ANSWER: B
+Apa yang digunakan untuk memuat data dari server sebelum rute diaktifkan?
+A) `resolve` dalam konfigurasi rute
+B) `canActivate` dalam rute
+C) `routeGuard`
+D) `prefetch`
+ANSWER: A
+Apa fungsi dari `RouterLink` dalam Angular?
+A) Melakukan navigasi antar rute
+B) Menyimpan state aplikasi
+C) Memuat resource eksternal
+D) Menginisialisasi komponen
+ANSWER: A
+Bagaimana cara menangani rute fallback ketika URL tidak cocok dengan rute yang terdaftar?
+A) Menambahkan rute `path: '**'` dengan redirect atau komponen default
+B) Menambahkan rute dengan `path: ''`
+C) Menggunakan `RouterModule.forFallback()`
+D) Salah semua
+ANSWER: A
